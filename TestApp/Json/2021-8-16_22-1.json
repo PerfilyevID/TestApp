@@ -1,0 +1,590 @@
+{
+  "users": [
+    {
+      "id": "151411169452752896",
+      "username": "1 1",
+      "voice_time": 316,
+      "unmute_time": 40,
+      "video_time": 212,
+      "mid_day_activity": 1,
+      "afk_time": 34,
+      "users_15time": 38,
+      "users_4time": 274,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-54"
+    },
+    {
+      "id": "239803156278673409",
+      "username": "2 2",
+      "voice_time": 139,
+      "unmute_time": 8,
+      "video_time": 6,
+      "mid_day_activity": 1,
+      "afk_time": 38,
+      "users_15time": 84,
+      "users_4time": 52,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-0"
+    },
+    {
+      "id": "251372888425234432",
+      "username": "3 3",
+      "voice_time": 264,
+      "unmute_time": 13,
+      "video_time": 0,
+      "mid_day_activity": 1,
+      "afk_time": 0,
+      "users_15time": 198,
+      "users_4time": 45,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-3"
+    },
+    {
+      "id": "252501432370987009",
+      "username": "4 4",
+      "voice_time": 112,
+      "unmute_time": 28,
+      "video_time": 49,
+      "mid_day_activity": 1,
+      "afk_time": 4,
+      "users_15time": 69,
+      "users_4time": 26,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-32"
+    },
+    {
+      "id": "272739154121457665",
+      "username": "5 5",
+      "voice_time": 420,
+      "unmute_time": 81,
+      "video_time": 58,
+      "mid_day_activity": 1,
+      "afk_time": 17,
+      "users_15time": 353,
+      "users_4time": 66,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-57"
+    },
+    {
+      "id": "285802802952011776",
+      "username": "6 6",
+      "voice_time": 363,
+      "unmute_time": 41,
+      "video_time": 317,
+      "mid_day_activity": 1,
+      "afk_time": 0,
+      "users_15time": 24,
+      "users_4time": 339,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-56"
+    },
+    {
+      "id": "310510539992203264",
+      "username": "7 7",
+      "voice_time": 420,
+      "unmute_time": 17,
+      "video_time": 300,
+      "mid_day_activity": 1,
+      "afk_time": 53,
+      "users_15time": 72,
+      "users_4time": 348,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-52"
+    },
+    {
+      "id": "316943991805313044",
+      "username": "8 8",
+      "voice_time": 384,
+      "unmute_time": 89,
+      "video_time": 265,
+      "mid_day_activity": 1,
+      "afk_time": 7,
+      "users_15time": 95,
+      "users_4time": 288,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-58"
+    },
+    {
+      "id": "331729301151940609",
+      "username": "9 9",
+      "voice_time": 396,
+      "unmute_time": 21,
+      "video_time": 32,
+      "mid_day_activity": 1,
+      "afk_time": 0,
+      "users_15time": 19,
+      "users_4time": 377,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-6"
+    },
+    {
+      "id": "341167183314944012",
+      "username": "10 10",
+      "voice_time": 339,
+      "unmute_time": 5,
+      "video_time": 259,
+      "mid_day_activity": 1,
+      "afk_time": 0,
+      "users_15time": 1,
+      "users_4time": 338,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-58"
+    },
+    {
+      "id": "345469546834165760",
+      "username": "11 11",
+      "voice_time": 419,
+      "unmute_time": 15,
+      "video_time": 304,
+      "mid_day_activity": 1,
+      "afk_time": 0,
+      "users_15time": 31,
+      "users_4time": 388,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-59"
+    },
+    {
+      "id": "352224661448425473",
+      "username": "12 12",
+      "voice_time": 378,
+      "unmute_time": 1,
+      "video_time": 194,
+      "mid_day_activity": 1,
+      "afk_time": 0,
+      "users_15time": 0,
+      "users_4time": 378,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-1"
+    },
+    {
+      "id": "372414048073023491",
+      "username": "13 13",
+      "voice_time": 404,
+      "unmute_time": 46,
+      "video_time": 18,
+      "mid_day_activity": 2,
+      "afk_time": 0,
+      "users_15time": 74,
+      "users_4time": 0,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-50"
+    },
+    {
+      "id": "392019960257314817",
+      "username": "14 14",
+      "voice_time": 359,
+      "unmute_time": 44,
+      "video_time": 138,
+      "mid_day_activity": 1,
+      "afk_time": 26,
+      "users_15time": 65,
+      "users_4time": 116,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-48"
+    },
+    {
+      "id": "428490622781882370",
+      "username": "15 15",
+      "voice_time": 383,
+      "unmute_time": 8,
+      "video_time": 212,
+      "mid_day_activity": 1,
+      "afk_time": 23,
+      "users_15time": 22,
+      "users_4time": 360,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-50"
+    },
+    {
+      "id": "442674228186054658",
+      "username": "16 16",
+      "voice_time": 420,
+      "unmute_time": 0,
+      "video_time": 112,
+      "mid_day_activity": 1,
+      "afk_time": 62,
+      "users_15time": 58,
+      "users_4time": 362,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-59"
+    },
+    {
+      "id": "493469900141232128",
+      "username": "17 17",
+      "voice_time": 360,
+      "unmute_time": 26,
+      "video_time": 177,
+      "mid_day_activity": 1,
+      "afk_time": 156,
+      "users_15time": 111,
+      "users_4time": 236,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-1"
+    },
+    {
+      "id": "531170044550578207",
+      "username": "18 18",
+      "voice_time": 420,
+      "unmute_time": 86,
+      "video_time": 188,
+      "mid_day_activity": 1,
+      "afk_time": 94,
+      "users_15time": 178,
+      "users_4time": 219,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-51"
+    },
+    {
+      "id": "620247814408110080",
+      "username": "19 19",
+      "voice_time": 365,
+      "unmute_time": 3,
+      "video_time": 306,
+      "mid_day_activity": 1,
+      "afk_time": 2,
+      "users_15time": 1,
+      "users_4time": 363,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-53"
+    },
+    {
+      "id": "622527380153696267",
+      "username": "20 20",
+      "voice_time": 400,
+      "unmute_time": 44,
+      "video_time": 50,
+      "mid_day_activity": 1,
+      "afk_time": 62,
+      "users_15time": 311,
+      "users_4time": 89,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-1"
+    },
+    {
+      "id": "632876577050460179",
+      "username": "21 21",
+      "voice_time": 225,
+      "unmute_time": 0,
+      "video_time": 0,
+      "mid_day_activity": 0,
+      "afk_time": 126,
+      "users_15time": 82,
+      "users_4time": 143,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "15-7"
+    },
+    {
+      "id": "691334668854886470",
+      "username": "22 22",
+      "voice_time": 363,
+      "unmute_time": 64,
+      "video_time": 336,
+      "mid_day_activity": 1,
+      "afk_time": 0,
+      "users_15time": 1,
+      "users_4time": 362,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-57"
+    },
+    {
+      "id": "694605377278574612",
+      "username": "23 23",
+      "voice_time": 362,
+      "unmute_time": 362,
+      "video_time": 278,
+      "mid_day_activity": 1,
+      "afk_time": 2,
+      "users_15time": 20,
+      "users_4time": 342,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-1"
+    },
+    {
+      "id": "712957002543792138",
+      "username": "24 24",
+      "voice_time": 388,
+      "unmute_time": 0,
+      "video_time": 89,
+      "mid_day_activity": 1,
+      "afk_time": 69,
+      "users_15time": 59,
+      "users_4time": 322,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-58"
+    },
+    {
+      "id": "719845600769736816",
+      "username": "25 25",
+      "voice_time": 383,
+      "unmute_time": 83,
+      "video_time": 16,
+      "mid_day_activity": 0,
+      "afk_time": 42,
+      "users_15time": 297,
+      "users_4time": 53,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-37"
+    },
+    {
+      "id": "719845850934935633",
+      "username": "26 26",
+      "voice_time": 254,
+      "unmute_time": 2,
+      "video_time": 121,
+      "mid_day_activity": 1,
+      "afk_time": 0,
+      "users_15time": 4,
+      "users_4time": 250,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-59"
+    },
+    {
+      "id": "719847166822187089",
+      "username": "27 27",
+      "voice_time": 361,
+      "unmute_time": 56,
+      "video_time": 271,
+      "mid_day_activity": 1,
+      "afk_time": 0,
+      "users_15time": 48,
+      "users_4time": 309,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-1"
+    },
+    {
+      "id": "723106569860153414",
+      "username": "28 28",
+      "voice_time": 183,
+      "unmute_time": 9,
+      "video_time": 0,
+      "mid_day_activity": 0,
+      "afk_time": 31,
+      "users_15time": 14,
+      "users_4time": 161,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "15-57"
+    },
+    {
+      "id": "729433589732868106",
+      "username": "29 29",
+      "voice_time": 361,
+      "unmute_time": 22,
+      "video_time": 194,
+      "mid_day_activity": 1,
+      "afk_time": 0,
+      "users_15time": 17,
+      "users_4time": 344,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-3"
+    },
+    {
+      "id": "729612535627513916",
+      "username": "30 30",
+      "voice_time": 402,
+      "unmute_time": 2,
+      "video_time": 243,
+      "mid_day_activity": 1,
+      "afk_time": 146,
+      "users_15time": 80,
+      "users_4time": 322,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-14"
+    },
+    {
+      "id": "730011824635904071",
+      "username": "31 31",
+      "voice_time": 358,
+      "unmute_time": 2,
+      "video_time": 122,
+      "mid_day_activity": 1,
+      "afk_time": 85,
+      "users_15time": 27,
+      "users_4time": 331,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-51"
+    },
+    {
+      "id": "739536784966418483",
+      "username": "32 32",
+      "voice_time": 266,
+      "unmute_time": 46,
+      "video_time": 0,
+      "mid_day_activity": 0,
+      "afk_time": 194,
+      "users_15time": 162,
+      "users_4time": 84,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "14-33"
+    },
+    {
+      "id": "740484952675581984",
+      "username": "33 33",
+      "voice_time": 420,
+      "unmute_time": 7,
+      "video_time": 268,
+      "mid_day_activity": 1,
+      "afk_time": 9,
+      "users_15time": 22,
+      "users_4time": 398,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-50"
+    },
+    {
+      "id": "742697492474232872",
+      "username": "34 34",
+      "voice_time": 51,
+      "unmute_time": 6,
+      "video_time": 51,
+      "mid_day_activity": 1,
+      "afk_time": 0,
+      "users_15time": 4,
+      "users_4time": 47,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-2"
+    },
+    {
+      "id": "760968956642197535",
+      "username": "35 35",
+      "voice_time": 338,
+      "unmute_time": 3,
+      "video_time": 162,
+      "mid_day_activity": 0,
+      "afk_time": 24,
+      "users_15time": 16,
+      "users_4time": 322,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "13-11"
+    },
+    {
+      "id": "762599301800132632",
+      "username": "36 36",
+      "voice_time": 339,
+      "unmute_time": 0,
+      "video_time": 264,
+      "mid_day_activity": 1,
+      "afk_time": 0,
+      "users_15time": 4,
+      "users_4time": 335,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "12-0"
+    },
+    {
+      "id": "762654722984509481",
+      "username": "37 37",
+      "voice_time": 402,
+      "unmute_time": 15,
+      "video_time": 228,
+      "mid_day_activity": 1,
+      "afk_time": 48,
+      "users_15time": 55,
+      "users_4time": 342,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-58"
+    },
+    {
+      "id": "781949293551419423",
+      "username": "38 38",
+      "voice_time": 360,
+      "unmute_time": 19,
+      "video_time": 267,
+      "mid_day_activity": 2,
+      "afk_time": 36,
+      "users_15time": 21,
+      "users_4time": 339,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-59"
+    },
+    {
+      "id": "854251748427169853",
+      "username": "39 39",
+      "voice_time": 378,
+      "unmute_time": 48,
+      "video_time": 154,
+      "mid_day_activity": 1,
+      "afk_time": 11,
+      "users_15time": 46,
+      "users_4time": 318,
+      "reactions": 0,
+      "messages": [
+      ],
+      "first_connection": "11-59"
+    }
+  ],
+  "last_output": 1629097242825
+}
