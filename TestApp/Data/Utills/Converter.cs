@@ -22,7 +22,7 @@ namespace TestApp.Data
                 return formats;
             }
         }
-        public static bool ParseToDate(this string value, out DateTime output)
+        public static bool ParseToDay(this string value, out DateTime output)
         {
             if (DateTime.TryParseExact(value.Split('_')[0], Formats, CultureInfo.CurrentUICulture, DateTimeStyles.None, out DateTime time))
             {

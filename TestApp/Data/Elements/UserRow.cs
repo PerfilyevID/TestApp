@@ -1,4 +1,4 @@
-﻿namespace TestApp.Data
+﻿namespace TestApp.Data.Elements
 {
     public class UserRow
     {

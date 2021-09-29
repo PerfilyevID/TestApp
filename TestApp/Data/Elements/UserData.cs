@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace TestApp.Data
+namespace TestApp.Data.Elements
 {
     /// <summary>
     /// Данные с бота.
@@ -76,7 +76,8 @@ namespace TestApp.Data
         /// Количество сообщений, написанных юзером.
         /// </summary>
         [JsonProperty("messages")]
-        public Message[] Messages { get; set; }
+        [Obsolete]
+        public Message[] Messages { get; set; } // PS: Не понятно почему в Json массив.
 
         /// <summary>
         /// Время первого входа.
@@ -90,12 +91,6 @@ namespace TestApp.Data
         /// </summary>
         [JsonProperty("last_reset")]
         public long LastReset { get; set; }
-
-    }
-
-    [Obsolete]
-    public class Message
-    {
 
     }
 }

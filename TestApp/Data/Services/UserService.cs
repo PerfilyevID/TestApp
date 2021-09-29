@@ -4,74 +4,69 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using TestApp.Data.Collections;
+using TestApp.Data.Elements;
 
 namespace TestApp.Data
 {
-    public enum Summ
-    {
-        voicetime = 0,
-        unmute_time = 1,
-        video_time = 2,
-        users_15time = 3,
-        users_4time = 4,
-        afk_time = 5
-    }
-    public enum Ammount
-    {
-        reactions = 6,
-        messages = 7
-    }
     public class UserService
     {
         public UserService() { }
 
-        public async Task<DateTimeOffset> GetMinDate()
+        /// <summary>
+        /// Получить минимальную/максимальную дату из существующих Json документов.
+        /// </summary>
+        /// <param name="max"></param>
+        /// <returns></returns>
+        public DateTimeOffset GetDate(bool max)
         {
             bool init = false;
-            DateTime minTime = DateTime.Now.AddDays(-1);
+            DateTime result = DateTime.Now.AddDays(max ? 1 : - 1);
             foreach (FileInfo file in new DirectoryInfo(Path.Combine(Startup.Root, "Json")).EnumerateFiles())
             {
 
-                if (file.Name.Split('_')[0].ParseToDate(out DateTime time))
+                if (file.Name.Split('_')[0].ParseToDay(out DateTime time))
                 {
-                    if (minTime > time || !init)
+                    if(max)
                     {
-                        minTime = time;
-                        init = true;
+                        if (result < time || !init)
+                        {
+                            result = time;
+                            init = true;
+                        }
+                    }
+                    else
+                    {
+                        if (result > time || !init)
+                        {
+                            result = time;
+                            init = true;
+                        }
                     }
                 }
             }
-            return minTime;
+            return result;
         }
-        public async Task<DateTimeOffset> GetMaxDate()
-        {
-            bool init = false;
-            DateTime maxTime = DateTime.Now.AddDays(3);
-            foreach (FileInfo file in new DirectoryInfo(Path.Combine(Startup.Root, "Json")).EnumerateFiles())
-            {
 
-                if (file.Name.Split('_')[0].ParseToDate(out DateTime time))
-                {
-                    if (maxTime < time || !init) 
-                    { 
-                        maxTime = time;
-                        init = true;
-                    }
-                }
-            }
-            return maxTime;
-        }
+        /// <summary>
+        /// Получить список пользователей с конкретным типом данных за выбранный период.
+        /// </summary>
+        /// <param name="from"></param>
+        /// <param name="to"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public async Task<UserRow[]> GetData(DateTimeOffset? from, DateTimeOffset? to, int value)
         {
             UserRow[] data;
             Dictionary<string, UserData[]> users = await GetUsers(from, to);
             if (value < 0 || value > 9) throw new ArgumentOutOfRangeException("value is out of range [0-9]");
-            else if (value < 8) data = value < 6 ? GetSummData(users, (Summ)value) : GetAmmountData(users, (Ammount)value);
+            else if (value < 8) data = value < 6 ? GetSummData(users, (ParameterGroup_Summ)value) : GetAmmountData(users, (ParameterGroup_Ammount)value);
             else data = value == 8 ? GetRelationalData(users) : GetPercentageData(users);
             data = data.OrderBy(x => x.PbClass).ThenBy(x => x.Index).Reverse().ToArray();
             return data;
         }
 
+        #region Private
         private async Task<Dictionary<string, UserData[]>> GetUsers(DateTimeOffset? from, DateTimeOffset? to)
         {
             DateTimeOffset _from = from == null ? DateTimeOffset.MinValue : (DateTimeOffset)from;
@@ -79,7 +74,7 @@ namespace TestApp.Data
             Dictionary<string, List<UserData>> data = new Dictionary<string, List<UserData>>();
             foreach (FileInfo file in new DirectoryInfo(Path.Combine(Startup.Root, "Json")).EnumerateFiles())
             {
-                if(file.Name.Split('_')[0].ParseToDate(out DateTime time))
+                if(file.Name.Split('_')[0].ParseToDay(out DateTime time))
                 {
                     if(time >= _from && time <= _to)
                     {
@@ -104,7 +99,7 @@ namespace TestApp.Data
             }
             return users;
         }
-        private UserRow[] GetAmmountData(Dictionary<string, UserData[]> users, Ammount value)
+        private UserRow[] GetAmmountData(Dictionary<string, UserData[]> users, ParameterGroup_Ammount value)
         {
             UserRow[] rows = new UserRow[users.Keys.Count];
             int i = 0;
@@ -115,10 +110,10 @@ namespace TestApp.Data
                 {
                     switch (value)
                     {
-                        case Ammount.messages:
+                        case ParameterGroup_Ammount.messages:
                             row.Progress += ud.Messages.Count();
                             break;
-                        case Ammount.reactions:
+                        case ParameterGroup_Ammount.reactions:
                             row.Progress += ud.Reactions;
                             break;
                     }
@@ -137,7 +132,7 @@ namespace TestApp.Data
             }
             return rows;
         }
-        private UserRow[] GetSummData(Dictionary<string, UserData[]> users, Summ value )
+        private UserRow[] GetSummData(Dictionary<string, UserData[]> users, ParameterGroup_Summ value )
         {
             UserRow[] rows = new UserRow[users.Keys.Count];
             int i = 0;
@@ -148,22 +143,22 @@ namespace TestApp.Data
                 {
                     switch (value)
                     {
-                        case Summ.afk_time:
+                        case ParameterGroup_Summ.afk_time:
                             row.Progress += ud.AfkTime;
                             break;
-                        case Summ.unmute_time:
+                        case ParameterGroup_Summ.unmute_time:
                             row.Progress += ud.UnmuteTime;
                             break;
-                        case Summ.users_15time:
+                        case ParameterGroup_Summ.users_15time:
                             row.Progress += ud.Users15time;
                             break;
-                        case Summ.users_4time:
+                        case ParameterGroup_Summ.users_4time:
                             row.Progress += ud.Users4time;
                             break;
-                        case Summ.video_time:
+                        case ParameterGroup_Summ.video_time:
                             row.Progress += ud.VideoTime;
                             break;
-                        case Summ.voicetime:
+                        case ParameterGroup_Summ.voicetime:
                             row.Progress += ud.Voicetime;
                             break;
                     }
@@ -243,16 +238,19 @@ namespace TestApp.Data
         private async Task<UserData[]> ReadUserData(FileInfo file)
         {
             List<UserData> users = new List<UserData>();
-            string[] parts = file.Name.Split('-');
-            WeirdDateSerializer.ReadDate = new DateTime(int.Parse(parts[0]), int.Parse(parts[1]), int.Parse(parts[2].Split('_')[0]));
-            using (FileStream stream = file.OpenRead())
+            if(Converter.ParseToDay(file.Name, out DateTime time))
             {
-                using (StreamReader reader = new StreamReader(stream))
+                WeirdDateSerializer.ReadDate = time;
+                using (FileStream stream = file.OpenRead())
                 {
-                    users.AddRange(JsonConvert.DeserializeObject<JsonCollection>(await reader.ReadToEndAsync()).Collection);
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        users.AddRange(JsonConvert.DeserializeObject<JsonContainer<UserData[]>>(await reader.ReadToEndAsync()).Collection);
+                    }
                 }
             }
             return users.ToArray();
         }
+        #endregion
     }
 }

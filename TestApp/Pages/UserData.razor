@@ -6,6 +6,12 @@
 
 <h1>Discord-bot</h1>
 
+<div class="alert alert-secondary" role="alert">
+    <p>Перфильев</p>
+    <p>Игорь</p>
+</div>
+
+<a class="btn btn-link" href="mailto: perfilyev.id@gmail.com">perfilyev.id@gmail.com</a>
 
 <div class="container">
     <div class="row">
@@ -33,7 +39,11 @@
 
 @if (userCollection == null)
 {
-    <p><em>...</em></p>
+<div class="d-flex justify-content-center" style="top: 20px">
+    <div class="spinner-border" role="status" style="top: 20px">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
 }
 else
 {
@@ -63,7 +73,7 @@ else
 }
 
 @code {
-    private TestApp.Data.UserRow[] userCollection;
+    private TestApp.Data.Elements.UserRow[] userCollection;
     private DateTimeOffset? From;
     private DateTimeOffset? To;
     private DateTimeOffset? Min = DateTime.Today.AddDays(-1);
@@ -76,10 +86,10 @@ else
     protected override async Task OnInitializedAsync()
     {
         userCollection = await UData.GetData(From, To, int.Parse(type));
-        Min = await UData.GetMinDate();
-        Max = await UData.GetMaxDate();
-        From = await UData.GetMinDate();
-        To = await UData.GetMaxDate();
+        Min = UData.GetDate(false);
+        Max = UData.GetDate(true);
+        From = Min;
+        To = Max;
     }
 
 
